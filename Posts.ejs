@@ -1,0 +1,23 @@
+<%- include("partials/header2.ejs") %>
+<h1>Your posts are here.</h1>
+<%for(var i = 0 ; i < Post.length; i++){%>
+    <% if(Post[i]){ %>
+     <ul>
+        <li>
+           <h3><%=Title[i] %></h3>
+        </li>
+      </ul>
+      <p class="py-2"><%=Post[i] %></p>
+
+<form class="homeForm" action="/Edit" method="POST">
+    <input type="hidden" name="buttonId" value=<%= i %> >
+    <input class="Click" type="submit" value="Edit">
+  </form>
+
+  <form class="homeForm" action="/delete" method="POST">
+    <input type="hidden" name="buttonId" value=<%= i %> >
+    <input class="Click" type="submit" value="Delete">
+  </form>
+  <% } %>
+  <% } %>
+<%-include("partials/footer.ejs")%>

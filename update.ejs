@@ -1,0 +1,9 @@
+<%- include("partials/header2.ejs") %> 
+<form action="/Update" method="POST">
+  <input type="hidden" name="buttonId" value=<%= index %> >
+  <textarea name="UserPost" class="NewPost" placeholder="What's new ?" ><%=Previous%></textarea>
+    <input class="Click" type="submit" value="Ok">
+  </form>
+
+<%- include("partials/footer.ejs") %>
+  

@@ -1,0 +1,79 @@
+html,
+body {
+  min-height: 650px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  background-image: linear-gradient(to bottom right, white, #3586ff);
+}
+img {
+  border-radius: 5px;
+  margin-right: 3px;
+}
+
+main {
+  padding: 5vmin;
+  flex: 1 0 auto;
+}
+
+h1 {
+  color: #3586ff;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.homeForm {
+  display: inline;
+  margin-top: 15px;
+  text-align: center;
+  resize: vertical;
+}
+ul {
+  padding-left: 20px;
+}
+.UserPost {
+  font-weight: 500;
+  font-size: 18px;
+  background-color: transparent;
+  line-height: 22px;
+  margin-bottom: 15px;
+  height: 250px;
+  width: 100%;
+  border: 2px solid #3586ff;
+  border-radius: 5px;
+}
+.NewPost {
+  font-weight: 500;
+  font-size: 18px;
+  background-color: transparent;
+  line-height: 22px;
+  margin-bottom: 15px;
+  height: 300px;
+  width: 100%;
+  border: 2px solid #3586ff;
+  border-radius: 5px;
+}
+
+.Click {
+  border-radius: 5px;
+  border: 0px;
+  color: white;
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 2px;
+  margin-bottom: 20px;
+  background-color: #3586ff;
+  cursor: pointer;
+}
+
+.Title_input {
+  height: 40px;
+  text-align: left;
+  background-color: transparent;
+  margin-bottom: 25px;
+  width: 25%;
+  border: 2px solid #3586ff;
+  border-radius: 5px;
+}

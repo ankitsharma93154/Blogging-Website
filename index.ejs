@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+
+<% if(locals.done){ %>
+    <h1>
+        <%= done %>
+    </h1>
+    <% } %>
+
+<form class="homeForm" action="/submit" method="POST">
+    <input type="text" class="Title_input" name="Title" placeholder="Title" required>
+    <textarea name="UserPost" class="UserPost" placeholder="What are you up to ?" required></textarea>
+    <input class="Click" type="submit" value="Create a Post">
+  </form>
+  <form class="homeForm" action="/ViewPost" method="POST">
+    <input class="Click" type="submit" value="View your Posts">
+  </form>
+  <%- include("partials/footer.ejs") %>
